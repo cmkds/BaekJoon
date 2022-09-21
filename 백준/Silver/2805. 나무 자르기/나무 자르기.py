@@ -1,8 +1,7 @@
 n , m = map(int,input().split())
-
 lst = list(map(int,input().split()))
-
 lst.sort()
+
 k = lst[-1]
 
 cnt = 0
@@ -16,5 +15,4 @@ while cnt < m:
         else:
             break
     cnt += dumi
-
 print(k)
