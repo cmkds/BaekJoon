@@ -1,16 +1,13 @@
 N, M = map(int,input().split())
 lst = list(map(int,input().split()))
 
-cnt=0
-res = []
+res = 0
 for i in range(N-2):
     for j in range(i+1, N-1):
         for k in range(j+1, N):
-            cnt += lst[i]
-            cnt += lst[j]
-            cnt += lst[k]
+            cnt = lst[i] + lst[j] + lst[k]
 
             if cnt <= M:
-                res.append(cnt)
+                res = max(res, cnt)
             cnt = 0
-print(max(res))
+print(res)
