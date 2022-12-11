@@ -1,11 +1,9 @@
 s = int(input())
 
-n = 1
-sum = 0
+a = 1
 while 1:
-    sum += n
-    n += 1
-    if sum > s:
-        n -= 2
+    s -= a
+    if s <= a:
         break
-print(n)
+    a +=1
+print(a)
